@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: flask-service
+  namespace: incubyte
+  labels:
+    app: flask
+spec:
+  ports:
+    - protocol: TCP
+      port: 9000
+      targetPort: 9000
